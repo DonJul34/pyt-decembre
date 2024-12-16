@@ -1,7 +1,7 @@
 # Chapitre 4: Opérations de Base
 # Correction: Opérations de Base
 # Demander à l'utilisateur de saisir deux nombres
-num1 = 0
+num1 = False
 while not num1 :
     try:
         num1 = float(input("Entrez le premier nombre : "))
@@ -13,6 +13,13 @@ while not num1 :
 addition = num1 + num2
 soustraction = num1 - num2
 multiplication = num1 * num2
+
+if num2 != 0 :
+    division = num1 / num2
+else:
+    division = "Division par zéro impossible"
+    print(division)
+
 division = num1 / num2 if num2 != 0 else "Division par zéro impossible"
 
 print(f"Addition : {num1} + {num2} = {addition}")

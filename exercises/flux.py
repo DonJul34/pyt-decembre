@@ -11,10 +11,11 @@ else:
 
 # Boucles
 # Boucle for pour afficher tous les nombres pairs entre 1 et 20
+listenombre = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
 print("Nombres pairs entre 1 et 20 :")
-for i in range(1, 21):
-    if i % 2 == 0:
-        print(i)
+for nombre in listenombre:
+    if nombre % 2 == 0:
+        print(nombre)
 
 # Boucle while qui demande à l'utilisateur un mot de passe jusqu'à ce qu'il saisisse le bon
 correct_password = "python123"
@@ -23,6 +24,7 @@ while password != correct_password:
     password = input("Saisissez le mot de passe : ")
     if password != correct_password:
         print("Mot de passe incorrect, essayez de nouveau.")
+
 print("Mot de passe correct, accès autorisé.")
 
 # Exceptions
@@ -35,3 +37,5 @@ except ValueError:
     print("Erreur : Veuillez entrer un nombre valide.")
 except ZeroDivisionError:
     print("Erreur : Division par zéro impossible.")
+except Exception as e:
+    print(e)
