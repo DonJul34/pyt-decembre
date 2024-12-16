@@ -1,5 +1,3 @@
-# client.py
-
 class Client:
     """Classe représentant un client dans le CRM."""
     
@@ -14,6 +12,11 @@ class Client:
         self.cout_ht = 20 + prix_par_employe * nombre_employes  # Coût HT (fixe + prix par employé)
         self.cout_ttc = self.cout_ht * 1.20  # Coût TTC avec TVA 20%
     
+    def __str__(self):
+        return (f"Nom: {self.nom}, Email: {self.email}, Téléphone: {self.telephone}, "
+                f"Catégorie: {self.categorie}, Nombre d'employés: {self.nombre_employes}, "
+                f"Coût HT: {self.cout_ht:.2f} €, Coût TTC: {self.cout_ttc:.2f} €")
+
     def afficher_infos(self):
         """Méthode pour afficher les informations du client."""
         return (f"Nom: {self.nom}, Email: {self.email}, Téléphone: {self.telephone}, "

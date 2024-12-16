@@ -45,7 +45,8 @@ if __name__ == "__main__":
 
         elif choix == "5":
             afficher_statistiques(clients)
-
+        elif choix == "7":
+            clients_par_categorie(clients)
         elif choix == "6":
             print("Au revoir !")
             break

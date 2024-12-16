@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Client - CRM</title>
+</head>
+<body>
+    <h1>Ajouter un Client dans le CRM</h1>
+    <form action="/cgi-bin/ajouter_client.py" method="post">
+        <label>Nom : <input type="text" name="nom" required></label><br><br>
+        <label>Email : <input type="email" name="email" required></label><br><br>
+        <label>Téléphone : <input type="text" name="telephone" required></label><br><br>
+        <label>Catégorie (SEO/Web/Autre) : <input type="text" name="categorie" required></label><br><br>
+        <label>Nombre d'employés : <input type="number" name="employes" min="1" required></label><br><br>
+        <input type="submit" value="Ajouter Client">
+    </form>
+    
+</body>
+</html>

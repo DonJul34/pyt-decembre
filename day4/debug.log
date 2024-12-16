@@ -1,0 +1,12 @@
+2024-11-07 13:34:06,126 - INFO - Starting ajouter_client.py script
+2024-11-07 13:34:06,133 - INFO - Modules imported successfully
+2024-11-07 13:34:06,133 - DEBUG - Form data received: nom=gALIAN, email=jules.galian@hotmail.fr, telephone=83123213213, categorie=Caca, employes=200
+2024-11-07 13:34:06,134 - INFO - Converted employes to integer: 200
+2024-11-07 13:34:06,134 - DEBUG - Price per employee determined: 5
+2024-11-07 13:34:06,139 - INFO - Client gALIAN added successfully to the database
+2024-11-14 15:34:35,492 - INFO - Starting ajouter_client.py script
+2024-11-14 15:34:35,575 - INFO - Modules imported successfully
+2024-11-14 15:34:35,579 - DEBUG - Form data received: nom=Galian, email=jules.galian@gmail.com, telephone=04214321321, categorie=Seo, employes=54
+2024-11-14 15:34:35,580 - INFO - Converted employes to integer: 54
+2024-11-14 15:34:35,580 - DEBUG - Price per employee determined: 5
+2024-11-14 15:34:35,621 - INFO - Client Galian added successfully to the database
