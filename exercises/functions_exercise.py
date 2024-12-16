@@ -25,5 +25,5 @@ rechercher_client(nom="Alice", email="alice@example.com", telephone="123456789")
 produit = lambda x, y: x * y
 
 # Exemple d'utilisation
-resultat = 4 * 5
+resultat = produit(4, 5)
 print(f"Le produit des deux nombres est : {resultat}")
