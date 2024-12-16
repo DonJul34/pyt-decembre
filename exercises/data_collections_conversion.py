@@ -25,7 +25,9 @@ person_info["compétences"] = skills_set
 print("Liste des nombres :", numbers)
 print("Tuple des nombres :", numbers_tuple)
 print("\nInformations sur la personne :")
-print(f"Nom : {person_info['nom']}")
+print("Nom : " + person_info['nom'] + ",  " + str(person_info['âge']) + ", " + person_info['compétences'])
+print(f"Nom : {person_info['nom']} , {person_info['âge']} , {person_info['compétences']}")
+
 print(f"Âge : {person_info['âge']}")
 print(f"Profession : {person_info['profession']}")
 print(f"Compétences : {', '.join(person_info['compétences'])}")
