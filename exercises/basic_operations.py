@@ -1,8 +1,13 @@
 # Chapitre 4: Opérations de Base
 # Correction: Opérations de Base
 # Demander à l'utilisateur de saisir deux nombres
-num1 = float(input("Entrez le premier nombre : "))
-num2 = float(input("Entrez le second nombre : "))
+num1 = 0
+while not num1 :
+    try:
+        num1 = float(input("Entrez le premier nombre : "))
+        num2 = float(input("Entrez le second nombre : "))
+    except:
+        print("num 1 et num 2 doivent être des nombres")
 
 # Effectuer les opérations arithmétiques de base et afficher les résultats
 addition = num1 + num2
@@ -22,5 +27,7 @@ print(f"Le texte que vous avez saisi est : {text}")
 # Utiliser les opérateurs logiques pour vérifier si le premier nombre est supérieur ou égal au second
 if num1 >= num2:
     print(f"Le premier nombre ({num1}) est supérieur ou égal au second nombre ({num2}).")
+    num1 += 1
+    print(f"Nouveau num 1 car plus petite que 2 est {num1}")
 else:
     print(f"Le premier nombre ({num1}) est inférieur au second nombre ({num2}).")

@@ -11,22 +11,26 @@ numbers.append(6)
 nombre_set = set(numbers)
 print(nombre_set)
 # Étape 4: Créer un dictionnaire contenant des informations sur une personne
-person_info = {
+persons_info = [{
     "nom": "Alice",
     "âge": 30,
     "profession": "Développeur",
     "HasPayedScolarship" : True
-}
+},
+{
+    "nom": "Jean",
+    "âge": 30,
+    "profession": "Développeur",
+    "HasPayedScolarship" : True
+},
+]
+x = 0
+for person in persons_info:
+    print("Nous sommes actuellement dans le dictionnaire utilisateur n°"+ str(x))
+    x+=1
+    print(person["nom"])
+
+
 
 # Étape 5: Ajouter un set pour les compétences de cette personne
 skills_set = {"Python", "JavaScript", "SQL"}
-person_info["compétences"] = skills_set
-
-# Étape 6: Imprimer toutes les informations de manière structurée
-print("Liste des nombres :", numbers)
-print("\nInformations sur la personne :")
-print("Nom : " + person_info['nom'] + ",  " + str(person_info['âge']) + ", " + str(person_info['compétences']))
-print(f"Nom : {person_info['nom']} , {person_info['âge']} , {person_info['compétences']}")
-print(f"Âge : {person_info['âge']}")
-print(f"Profession : {person_info['profession']}")
-print(f"Compétences : {', '.join(person_info['compétences'])}")
