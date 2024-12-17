@@ -7,8 +7,10 @@ def calculer_facture(prix, quantite, taux_tva=1.20):
     montant_ttc = prix * quantite * taux_tva
     return montant_ttc
 
+prix = float(input("Prix de la facture"))
+quantite = int(input("Quantité"))
 # Exemple d'utilisation
-facture = calculer_facture(100, 5)
+facture = calculer_facture(prix, quantite)
 print(f"Montant total TTC : {facture} €")
 
 # Fonction rechercher_client

@@ -1,7 +1,7 @@
 import csv
 
-# CRM - Gestion des clients avec stockage dans un fichier CSV
 
+# CRM - Gestion des clients avec stockage dans un fichier CSV
 def bienvenue():
     """Affiche un message de bienvenue"""
     print("Bienvenue dans le CRM (Customer Relationship Manager)")
@@ -9,10 +9,18 @@ def bienvenue():
 def creer_client():
     """Fonction pour ajouter un nouveau client et calculer le revenu potentiel"""
     # Saisie des informations d'un client
-    nom = input("Entrez le nom du client : ")
+    nom = ""
+    while not nom :
+        try:
+            nom = input("Entrez le nom du client : ")
+            if not nom:
+                print("Veuillez entre un nom")
+        except:
+            print("Veuillez entre un nom")
+
     email = input("Entrez l'email du client : ")
     telephone = input("Entrez le numéro de téléphone du client : ")
-
+    categorie = input("Entre une catégorie de client")
     # Saisie du nombre d'employés du client
     try:
         nombre_employes = int(input("Entrez le nombre d'employés du client : "))
@@ -21,7 +29,10 @@ def creer_client():
         nombre_employes = int(input("Entrez le nombre d'employés du client : "))
 
     # Calcul du coût du CRM
-    cout_ht = 20 + 5 * nombre_employes  # Montant Hors Taxe
+    if categorie == "SEO" or categorie == "SEA":
+        cout_ht = 20 + (7 * nombre_employes)  # Montant Hors Taxe
+    else:
+        cout_ht = 20 + (5 * nombre_employes)  # Montant Hors Taxe
     tva = 0.20  # TVA de 20%
     montant_tva = cout_ht * tva  # Montant de la TVA
     cout_ttc = cout_ht + montant_tva  # Montant Toutes Taxes Comprises
@@ -33,7 +44,7 @@ def creer_client():
         "telephone": telephone,
         "nombre_employes": nombre_employes,
         "cout_ht": cout_ht,
-        "cout_ttc": cout_ttc
+        "cout_ttc": cout_ttc,
     }
 
 def sauvegarder_client_csv(client, fichier="clients.csv"):
@@ -58,7 +69,6 @@ def afficher_clients_csv(fichier="clients.csv"):
 # Point d'entrée
 if __name__ == "__main__":
     bienvenue()
-    clients = []  # Liste pour stocker les clients temporairement (optionnel)
 
     while True:
         print("\n--- Menu ---")
@@ -72,7 +82,6 @@ if __name__ == "__main__":
             # Ajouter un client et sauvegarder dans CSV
             client = creer_client()
             sauvegarder_client_csv(client)
-            clients.append(client)  # Optionnel, permet de garder les clients en mémoire
         elif choix == "2":
             # Afficher les clients depuis le fichier CSV
             afficher_clients_csv()
