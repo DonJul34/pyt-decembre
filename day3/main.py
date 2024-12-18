@@ -3,6 +3,8 @@
 from client import Client
 from statistiques import afficher_statistiques
 from admin import creer_client, modifier_client, supprimer_client
+from category import Categorie
+
 
 def menu():
     print("\n--- Menu CRM ---")
@@ -16,13 +18,18 @@ def menu():
 # Point d'entrée
 if __name__ == "__main__":
     clients = []  # Liste pour stocker les clients
-    
+    categories = {
+        "SEO": Categorie("SEO", 7),
+        "Web": Categorie("Web", 7),
+        "Autre": Categorie("Autre", 5),
+    }
+
     while True:
         menu()
         choix = input("Sélectionnez une option : ")
 
         if choix == "1":
-            client = creer_client()
+            client = creer_client(categories)
             clients.append(client)
             print(f"Client {client.nom} ajouté avec succès.")
         
@@ -45,8 +52,7 @@ if __name__ == "__main__":
 
         elif choix == "5":
             afficher_statistiques(clients)
-        elif choix == "7":
-            clients_par_categorie(clients)
+
         elif choix == "6":
             print("Au revoir !")
             break

@@ -1,15 +1,33 @@
 # admin.py
 
 from client import Client
+from category import Categorie
 
-def creer_client():
-    """Crée un nouveau client."""
+
+def creer_client(categories):
+    """Crée un nouveau client avec gestion dynamique des catégories."""
     nom = input("Nom du client : ")
     email = input("Email du client : ")
     telephone = input("Téléphone du client : ")
     
-    categorie = input("Catégorie (SEO/Web/Autre) : ").capitalize()
-    prix_par_employe = 7 if categorie in ["SEO", "Web"] else 5
+    categorie_nom = input("Catégorie (SEO/Web/Autre ou une nouvelle) : ").capitalize()
+    
+    # Vérifier si la catégorie existe
+    if categorie_nom not in categories:
+        print(f"La catégorie '{categorie_nom}' n'existe pas encore.")
+        try:
+            prix_par_employe = float(input(f"Entrez le coût par employé pour la catégorie '{categorie_nom}' : "))
+        except ValueError:
+            print("Valeur invalide. Utilisation du coût par défaut (5 €).")
+            prix_par_employe = 5
+        
+        # Ajouter la nouvelle catégorie
+        nouvelle_categorie = Categorie(categorie_nom, prix_par_employe)
+        categories[categorie_nom] = nouvelle_categorie
+        print(f"Nouvelle catégorie '{categorie_nom}' ajoutée avec un coût par employé de {prix_par_employe} €.")
+    else:
+        # Récupérer le prix par employé de la catégorie existante
+        prix_par_employe = categories[categorie_nom].prix_par_employe
     
     while True:
         try:
@@ -18,7 +36,7 @@ def creer_client():
         except ValueError:
             print("Veuillez entrer un nombre valide.")
     
-    return Client(nom, email, telephone, categorie, nombre_employes, prix_par_employe)
+    return Client(nom, email, telephone, categorie_nom, nombre_employes, prix_par_employe)
 
 def modifier_client(client):
     """Permet de modifier les informations d'un client existant."""
