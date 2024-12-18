@@ -1,8 +1,6 @@
 # admin.py
-
 from client import Client
 from category import Categorie
-
 
 def creer_client(categories):
     """Crée un nouveau client avec gestion dynamique des catégories."""
@@ -35,7 +33,6 @@ def creer_client(categories):
             break
         except ValueError:
             print("Veuillez entrer un nombre valide.")
-    
     return Client(nom, email, telephone, categorie_nom, nombre_employes, prix_par_employe)
 
 def modifier_client(client):

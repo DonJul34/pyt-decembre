@@ -1,6 +1,5 @@
 class Client:
     """Classe représentant un client dans le CRM."""
-    
     def __init__(self, nom, email, telephone, categorie, nombre_employes, prix_par_employe):
         """Constructeur de la classe Client."""
         self.nom = nom
@@ -25,4 +24,17 @@ class Client:
 
     def calculer_chiffre_affaire(self):
         """Méthode pour renvoyer le chiffre d'affaires généré par ce client."""
-        return self.cout_ttc
+        prix_final = self.cout_ttc -20
+        return prix_final
+    
+    def calculer_chiffre_affaire(self):
+        """Méthode pour renvoyer le chiffre d'affaires généré par ce client."""
+        prix_final = self.cout_ttc -20
+        return prix_final
+    
+
+    def get_client_category(self):
+        """Méthode pour renvoyer le chiffre d'affaires généré par ce client."""
+        prix_final = se
+        return self.categorie
+    

@@ -1,0 +1,41 @@
+<!-- templates/ajouter_client.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Client</title>
+</head>
+<body>
+    <h1>Ajouter un Nouveau Client</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="/ajouter" method="post">
+        <!-- Champs du formulaire -->
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telephone">Téléphone :</label><br>
+        <input type="text" id="telephone" name="telephone" required><br><br>
+
+        <label for="categorie">Catégorie :</label><br>
+        <input type="text" id="categorie" name="categorie" required><br><br>
+
+        <label for="nombre_employes">Nombre d’Employés :</label><br>
+        <input type="number" id="nombre_employes" name="nombre_employes" required><br><br>
+
+        <input type="submit" value="Ajouter Client">
+    </form>
+</body>
+</html>

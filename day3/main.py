@@ -56,6 +56,5 @@ if __name__ == "__main__":
         elif choix == "6":
             print("Au revoir !")
             break
-
         else:
             print("Option non valide, veuillez réessayer.")
