@@ -1,0 +1,118 @@
+2024-12-18 14:36:49,536 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 14:36:49,536 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 14:36:49,539 - INFO -  * Restarting with stat
+2024-12-18 14:36:49,875 - WARNING -  * Debugger is active!
+2024-12-18 14:36:49,884 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:36:54,413 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:36:54,414 - INFO - 127.0.0.1 - - [18/Dec/2024 14:36:54] "GET /clients HTTP/1.1" 200 -
+2024-12-18 14:38:17,918 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 14:38:17,919 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 14:38:17,919 - INFO -  * Restarting with stat
+2024-12-18 14:38:18,277 - WARNING -  * Debugger is active!
+2024-12-18 14:38:18,284 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:38:20,775 - INFO - 127.0.0.1 - - [18/Dec/2024 14:38:20] "[33mGET /clients HTTP/1.1[0m" 404 -
+2024-12-18 14:39:58,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 14:39:58,766 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 14:39:58,768 - INFO -  * Restarting with stat
+2024-12-18 14:39:59,175 - WARNING -  * Debugger is active!
+2024-12-18 14:39:59,182 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:40:00,849 - INFO - 127.0.0.1 - - [18/Dec/2024 14:40:00] "[33mGET /clients HTTP/1.1[0m" 404 -
+2024-12-18 14:40:17,424 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:40:17,494 - INFO -  * Restarting with stat
+2024-12-18 14:40:17,897 - WARNING -  * Debugger is active!
+2024-12-18 14:40:17,902 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:40:50,932 - INFO - 127.0.0.1 - - [18/Dec/2024 14:40:50] "[33mGET /clients HTTP/1.1[0m" 404 -
+2024-12-18 14:41:12,248 - INFO - 127.0.0.1 - - [18/Dec/2024 14:41:12] "[33mGET /clients HTTP/1.1[0m" 404 -
+2024-12-18 14:42:54,115 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:42:54,182 - INFO -  * Restarting with stat
+2024-12-18 14:42:54,518 - WARNING -  * Debugger is active!
+2024-12-18 14:42:54,525 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:43:41,233 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:43:41,282 - INFO -  * Restarting with stat
+2024-12-18 14:43:41,675 - WARNING -  * Debugger is active!
+2024-12-18 14:43:41,679 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:43:44,736 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:43:44,773 - INFO -  * Restarting with stat
+2024-12-18 14:43:49,033 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 14:43:49,033 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 14:43:49,034 - INFO -  * Restarting with stat
+2024-12-18 14:43:49,388 - WARNING -  * Debugger is active!
+2024-12-18 14:43:49,393 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:43:57,832 - INFO - Appel de la route /clients
+2024-12-18 14:43:57,834 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:43:57,835 - INFO - 127.0.0.1 - - [18/Dec/2024 14:43:57] "GET /clients HTTP/1.1" 200 -
+2024-12-18 14:44:08,333 - INFO - 127.0.0.1 - - [18/Dec/2024 14:44:08] "OPTIONS /ajouter_client HTTP/1.1" 200 -
+2024-12-18 14:44:08,656 - INFO - Client ajouté : test, jules.galian@gmail.com
+2024-12-18 14:44:08,657 - INFO - 127.0.0.1 - - [18/Dec/2024 14:44:08] "[35m[1mPOST /ajouter_client HTTP/1.1[0m" 201 -
+2024-12-18 14:44:09,659 - INFO - Appel de la route /clients
+2024-12-18 14:44:09,662 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:44:09,663 - INFO - 127.0.0.1 - - [18/Dec/2024 14:44:09] "GET /clients HTTP/1.1" 200 -
+2024-12-18 14:46:13,039 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:46:13,104 - INFO -  * Restarting with stat
+2024-12-18 14:46:13,910 - WARNING -  * Debugger is active!
+2024-12-18 14:46:13,922 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:50:32,612 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:50:32,644 - INFO -  * Restarting with stat
+2024-12-18 14:50:33,028 - WARNING -  * Debugger is active!
+2024-12-18 14:50:33,035 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:50:40,147 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:50:40,195 - INFO -  * Restarting with stat
+2024-12-18 14:50:40,581 - WARNING -  * Debugger is active!
+2024-12-18 14:50:40,586 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:52:34,823 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:52:34,866 - INFO -  * Restarting with stat
+2024-12-18 14:52:35,248 - WARNING -  * Debugger is active!
+2024-12-18 14:52:35,258 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:52:51,454 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 14:52:51,511 - INFO -  * Restarting with stat
+2024-12-18 14:52:51,894 - WARNING -  * Debugger is active!
+2024-12-18 14:52:51,902 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 14:55:00,443 - INFO - Appel de la route /clients
+2024-12-18 14:55:00,444 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:55:00,445 - INFO - 127.0.0.1 - - [18/Dec/2024 14:55:00] "GET /clients HTTP/1.1" 200 -
+2024-12-18 14:55:06,493 - INFO - Appel de la route /clients
+2024-12-18 14:55:06,494 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:55:06,495 - INFO - 127.0.0.1 - - [18/Dec/2024 14:55:06] "GET /clients HTTP/1.1" 200 -
+2024-12-18 14:55:27,831 - INFO - 127.0.0.1 - - [18/Dec/2024 14:55:27] "OPTIONS /ajouter_client HTTP/1.1" 200 -
+2024-12-18 14:55:28,086 - INFO - Client ajouté : Jean, jules.galian@gmail.com
+2024-12-18 14:55:28,086 - INFO - 127.0.0.1 - - [18/Dec/2024 14:55:28] "[35m[1mPOST /ajouter_client HTTP/1.1[0m" 201 -
+2024-12-18 14:55:29,402 - INFO - Appel de la route /clients
+2024-12-18 14:55:29,403 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 14:55:29,404 - INFO - 127.0.0.1 - - [18/Dec/2024 14:55:29] "GET /clients HTTP/1.1" 200 -
+2024-12-18 15:00:16,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 15:00:16,721 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 15:00:16,723 - INFO -  * Restarting with stat
+2024-12-18 15:00:17,114 - WARNING -  * Debugger is active!
+2024-12-18 15:00:17,121 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 15:00:17,845 - INFO - Appel de la route /clients
+2024-12-18 15:00:17,847 - INFO - Liste des clients récupérée avec succès.
+2024-12-18 15:00:17,848 - INFO - 127.0.0.1 - - [18/Dec/2024 15:00:17] "GET /clients HTTP/1.1" 200 -
+2024-12-18 15:02:32,030 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 15:02:32,073 - INFO -  * Restarting with stat
+2024-12-18 15:02:32,478 - WARNING -  * Debugger is active!
+2024-12-18 15:02:32,484 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 15:10:18,899 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 15:10:18,929 - INFO -  * Restarting with stat
+2024-12-18 15:10:19,298 - WARNING -  * Debugger is active!
+2024-12-18 15:10:19,305 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 15:10:21,378 - INFO -  * Detected change in 'D:\\pyt\\cgi\\flasktest2\\app.py', reloading
+2024-12-18 15:10:21,421 - INFO -  * Restarting with stat
+2024-12-18 15:10:21,801 - WARNING -  * Debugger is active!
+2024-12-18 15:10:21,805 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 16:03:09,009 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 16:03:09,009 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 16:03:50,538 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 16:03:50,538 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-18 16:03:50,540 - INFO -  * Restarting with stat
+2024-12-18 16:03:50,865 - WARNING -  * Debugger is active!
+2024-12-18 16:03:50,869 - INFO -  * Debugger PIN: 575-118-958
+2024-12-18 16:03:55,105 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-18 16:03:55,105 - INFO - [33mPress CTRL+C to quit[0m
